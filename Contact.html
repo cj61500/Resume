@@ -88,29 +88,24 @@
     </ul>
   </nav>
 
-  <h1>John Doe</h1>
+  <h1>Contact Me</h1>
 
   <div class="section">
-    <div class="section-heading">Summary</div>
     <div class="section-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac libero quis lectus rutrum malesuada. Curabitur ultrices sapien at semper ullamcorper.</p>
+      <form action="send_email.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <input type="submit" value="Send">
+      </form>
     </div>
   </div>
 
-  <div class="section">
-    <div class="section-heading">Experience</div>
-    <div class="section-content">
-      <h2>Company A</h2>
-      <p>Position: Software Developer</p>
-      <p>Duration: 2018 - 2021</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies quam ac tincidunt feugiat.</p>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="section-heading">Education</div>
-    <div class="section-content">
-      <h2>University XYZ</h2>
-      <p>Major: Computer Science</p>
-      <p>Graduation Year: 2018</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac libero quis lectus rutrum malesuada. Curabitur ultrices sapien at semper ullamcor
+</body>
+</html>
