@@ -6,10 +6,6 @@
     /* CSS styles for the navigation bar */
     nav {
       background-color: #f2f2f2;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
     }
 
     nav ul {
@@ -20,13 +16,30 @@
     }
 
     nav li {
-      float: left;
+      display: inline-block;
     }
 
-    nav li a {
+    nav li a, .dropdown-content a {
       display: block;
       padding: 8px 16px;
       text-decoration: none;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #000;
+    }
+
+    nav li:hover .dropdown-content {
+      display: block;
     }
 
     /* Add additional styles for the navigation bar or other elements here */
@@ -35,14 +48,21 @@
 <body>
   <nav>
     <ul>
-        <li><a href="Test.html">Home</a></li>
-        <li><a href="Education.html">Education</a></li>
-        <li><a href="Experience.html">Experience</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Dropdown Item 1</a>
+          <a href="#">Dropdown Item 2</a>
+          <a href="#">Dropdown Item 3</a>
+        </div>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </nav>
 
-  <h1><br>Welcome to My Webpage</h1>
+  <h1>Welcome to My Webpage</h1>
   <!-- Add your content here -->
 
 </body>
