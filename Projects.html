@@ -87,6 +87,19 @@
       transform: scale(2.6);
     }
 
+    .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
     /* Add additional styles for the navigation bar or other elements here */
   </style>
 </head>
@@ -114,7 +127,19 @@
         own VLANs, and were successfully able to communicate between VLANs with no issues.
       </p>
       <img src="CapstoneSS.png" alt="Capstone Project Photo" class="center">
+      <p>
+        We are using the Cisco Hot Stanndby Routing Protocol(HSRP) to create a standby IP Address for each set 
+        of routers to share. R1 and R2, WAN1 and WAN2, and R3 and R4 are our pairs that share an address. If 
+        the primary device, actively holding the IP address, were to go offline, the secondary device will then
+        pick up the standby address and act as the default gateway for all the devices sending traffic, ensuring 
+        data is not lost. Please feel free to download the Packet Tracer, Routing Table, and Final Report produced
+        by my group and I below!
+      </p>
 
+      <br><br>
+      <a class="btn" href="Project-FixedSecurity (2).pkt" download="Charles_Gill_Jr_CapstonePacketTracer.pkt">Download The Packet Tracer!</a>
+      <a class="btn" href="Cisco Network.pdf" download="Charles_Gill_Jr_CapstoneRouting.pdf">Download The Routing Table!</a>
+      <a class="btn" href="IT491 Final Report.pdf" download="Charles_Gill_Jr_CapstoneReport.pdf">Download Final Report!</a>
     </div>
   </div>
 </body>
