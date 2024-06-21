@@ -118,27 +118,23 @@
 
   <h1>Projects</h1>
   <div class="section">
-    <div class="section-heading">Automated Reports - Redacted - 02/2024</div>
+    <div class="section-heading">Automated Audit Reports - 02/2024</div>
     <div class="section-content">
       <p>
         There was a request that we automate the sending of an Automated report for one of the gambling services that we use, and I took it upon myself to
         attempt and provide a solution while we awaited the service's team to inform us if they had an internal option. While most likely not very optimal,
-        I managed to produce a solution that opens 27 different webpages one by one to: login, download the list of active users and permissions, parse the webpage to
+        I managed to produce a solution programmed in Python that opens 27 different webpages one by one to: login, download the list of active users and permissions, parse the webpage to
         copy the important user data to a CSV, and move both files to a folder. The CSV files are then combined into a single file that is added to the folder. 
         The folder is then zipped, and uploaded to OneDrive for the necessary teams to assess. 
       </p>
       <br>
       <p>
-        <b><u>Major Modules Used</u></b> 
+        <b><u>Major Python Modules Used</u></b> 
         <li>Selenium - Used to open and interact with webpages</li>
         <li>Pandas - Used to merge CSV files</li>
         <li>OS - Used to locate files and directories in local storage</li>
         <li>SHUtil - Used to modify and move files in local storage</li>
         <li>FNMatch - Used to match filenames in a given directory</li>
-      </p>
-      <br>
-      <p>
-        Zip folder with the scripts to come!
       </p>
     </div>
   </div>
